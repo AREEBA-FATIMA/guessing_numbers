@@ -24,7 +24,9 @@ if (ask.number === randomNumber) {
         message: "Please choose a number between 1 to 5..."
     });
 
-    if (ask2.number === randomNumber) {
+    let randomNumber2 = Math.floor(Math.random() * 6);
+
+    if (ask2.number === randomNumber2) {
         console.log(chalk.bold.italic.green("Congratulations! Correct Answer"));
         console.log(chalk.bold.yellow("**Round 3**"));
 
@@ -34,7 +36,9 @@ if (ask.number === randomNumber) {
             message: "Please choose a number between 1 to 10..."
         });
 
-        if (ask3.number === randomNumber) {
+        let randomNumber3 = Math.floor(Math.random() * 11);
+
+        if (ask3.number === randomNumber3) {
             console.log(chalk.bold.italic.green("Congratulations! You Win"));
         } else {
             console.log(chalk.bold.italic.red("You loose! Better luck next time"));
