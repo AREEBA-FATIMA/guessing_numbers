@@ -11,7 +11,7 @@ console.log(chalk.bold.yellow("**Round 1**"));
 let ask = await inquirer.prompt({
     name: "number",
     type: "number",
-    message: "Please choose a number between 1 to 3..."
+    message: "Please choose a number between 0 to 3..."
 });
 
 if (ask.number === randomNumber) {
@@ -21,7 +21,7 @@ if (ask.number === randomNumber) {
     let ask2 = await inquirer.prompt({
         name: "number",
         type: "number",
-        message: "Please choose a number between 1 to 5..."
+        message: "Please choose a number between 0 to 5..."
     });
 
     let randomNumber2 = Math.floor(Math.random() * 6);
@@ -33,7 +33,7 @@ if (ask.number === randomNumber) {
         let ask3 = await inquirer.prompt({
             name: "number",
             type: "number",
-            message: "Please choose a number between 1 to 10..."
+            message: "Please choose a number between 0 to 10..."
         });
 
         let randomNumber3 = Math.floor(Math.random() * 11);
